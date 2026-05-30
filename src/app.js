@@ -13,7 +13,12 @@ app.post("/note", (req,res)=>{
     })
 })
 
-
+app.get("/note", (req,res)=>{
+    res.status(200).json({
+        message: "note fetched",
+        notes: notes
+    })
+})
 app.delete("/note/:index", (req,res)=>{
     const index = req.params.index
     delete notes[index]
