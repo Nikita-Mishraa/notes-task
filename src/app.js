@@ -33,23 +33,6 @@ app.get("/posts", async (req,res)=>{
         
     })
 })
-app.delete("/note/:index", (req,res)=>{
-    const id = req.params.index
-    delete notes[index]
 
-    res.status(200).json({
-        message : "note deleted succesfully"
-    })
-})
-
-app.patch("/note/:index", (req,res)=>{
-    const index = req.params.index
-    const description = req.body.description
-    notes[index].description = description
-
-    res.status(200).json()({
-        message: "note updated"
-    })
-})
 
 module.exports = app
