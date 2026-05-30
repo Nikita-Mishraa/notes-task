@@ -12,4 +12,16 @@ app.post("/note", (req,res)=>{
         message: "note created succesfully"
     })
 })
+
+
+app.delete("/note/:index", (req,res)=>{
+    const index = req.params.index
+    delete notes[index]
+
+    res.status(200).json({
+        message : "note deleted succesfully"
+    })
+})
+
+
 module.exports = app
