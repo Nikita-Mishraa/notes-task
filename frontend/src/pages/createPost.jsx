@@ -3,7 +3,16 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
 const CreatePost = ()=>{
   return(
-    <section>
+    <section className = 'create-post-section'>
+      <h1>Create Post</h1>
+      <form>
+        <input type="file" name = "image" accept = "image/*" />
+        <input type="text" name = "caption" required/>
+        <button type="submit">Submit</button>
+
+
+
+      </form>
     </section>
 
   )
