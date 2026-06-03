@@ -1,4 +1,3 @@
-# Notes application
 # Notes Task Manager
 
 A full-stack Notes & Task Management application built with the MERN stack. The application allows users to create, organize, update, and delete notes and tasks through a clean and responsive interface.
